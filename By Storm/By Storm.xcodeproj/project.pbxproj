@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		430099F51D26A1C20027A87A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430099F41D26A1C20027A87A /* AppDelegate.swift */; };
+		430099F71D26A1C20027A87A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430099F61D26A1C20027A87A /* ViewController.swift */; };
+		430099FA1D26A1C20027A87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430099F81D26A1C20027A87A /* Main.storyboard */; };
+		430099FD1D26A1C20027A87A /* By_Storm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 430099FB1D26A1C20027A87A /* By_Storm.xcdatamodeld */; };
+		430099FF1D26A1C20027A87A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 430099FE1D26A1C20027A87A /* Assets.xcassets */; };
+		43009A021D26A1C20027A87A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43009A001D26A1C20027A87A /* LaunchScreen.storyboard */; };
+		43009A0D1D26A1C20027A87A /* By_StormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43009A0C1D26A1C20027A87A /* By_StormTests.swift */; };
+		43009A181D26A1C20027A87A /* By_StormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43009A171D26A1C20027A87A /* By_StormUITests.swift */; };
+		43009A261D26A1DA0027A87A /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43009A251D26A1DA0027A87A /* WeatherController.swift */; };
+		43009A281D26A2570027A87A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43009A271D26A2570027A87A /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43009A091D26A1C20027A87A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 430099E91D26A1C20027A87A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 430099F01D26A1C20027A87A;
+			remoteInfo = "By Storm";
+		};
+		43009A141D26A1C20027A87A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 430099E91D26A1C20027A87A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 430099F01D26A1C20027A87A;
+			remoteInfo = "By Storm";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		430099F11D26A1C20027A87A /* By Storm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "By Storm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		430099F41D26A1C20027A87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		430099F61D26A1C20027A87A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		430099F91D26A1C20027A87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		430099FC1D26A1C20027A87A /* By_Storm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = By_Storm.xcdatamodel; sourceTree = "<group>"; };
+		430099FE1D26A1C20027A87A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43009A011D26A1C20027A87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43009A031D26A1C20027A87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43009A081D26A1C20027A87A /* By StormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "By StormTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43009A0C1D26A1C20027A87A /* By_StormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = By_StormTests.swift; sourceTree = "<group>"; };
+		43009A0E1D26A1C20027A87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43009A131D26A1C20027A87A /* By StormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "By StormUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43009A171D26A1C20027A87A /* By_StormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = By_StormUITests.swift; sourceTree = "<group>"; };
+		43009A191D26A1C20027A87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43009A251D26A1DA0027A87A /* WeatherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
+		43009A271D26A2570027A87A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		430099EE1D26A1C20027A87A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43009A281D26A2570027A87A /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43009A051D26A1C20027A87A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43009A101D26A1C20027A87A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		430099E81D26A1C20027A87A = {
+			isa = PBXGroup;
+			children = (
+				43009A271D26A2570027A87A /* CoreLocation.framework */,
+				430099F31D26A1C20027A87A /* By Storm */,
+				43009A0B1D26A1C20027A87A /* By StormTests */,
+				43009A161D26A1C20027A87A /* By StormUITests */,
+				430099F21D26A1C20027A87A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		430099F21D26A1C20027A87A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				430099F11D26A1C20027A87A /* By Storm.app */,
+				43009A081D26A1C20027A87A /* By StormTests.xctest */,
+				43009A131D26A1C20027A87A /* By StormUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		430099F31D26A1C20027A87A /* By Storm */ = {
+			isa = PBXGroup;
+			children = (
+				430099F41D26A1C20027A87A /* AppDelegate.swift */,
+				430099F61D26A1C20027A87A /* ViewController.swift */,
+				430099F81D26A1C20027A87A /* Main.storyboard */,
+				430099FE1D26A1C20027A87A /* Assets.xcassets */,
+				43009A001D26A1C20027A87A /* LaunchScreen.storyboard */,
+				43009A031D26A1C20027A87A /* Info.plist */,
+				430099FB1D26A1C20027A87A /* By_Storm.xcdatamodeld */,
+				43009A251D26A1DA0027A87A /* WeatherController.swift */,
+			);
+			path = "By Storm";
+			sourceTree = "<group>";
+		};
+		43009A0B1D26A1C20027A87A /* By StormTests */ = {
+			isa = PBXGroup;
+			children = (
+				43009A0C1D26A1C20027A87A /* By_StormTests.swift */,
+				43009A0E1D26A1C20027A87A /* Info.plist */,
+			);
+			path = "By StormTests";
+			sourceTree = "<group>";
+		};
+		43009A161D26A1C20027A87A /* By StormUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43009A171D26A1C20027A87A /* By_StormUITests.swift */,
+				43009A191D26A1C20027A87A /* Info.plist */,
+			);
+			path = "By StormUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		430099F01D26A1C20027A87A /* By Storm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43009A1C1D26A1C20027A87A /* Build configuration list for PBXNativeTarget "By Storm" */;
+			buildPhases = (
+				430099ED1D26A1C20027A87A /* Sources */,
+				430099EE1D26A1C20027A87A /* Frameworks */,
+				430099EF1D26A1C20027A87A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "By Storm";
+			productName = "By Storm";
+			productReference = 430099F11D26A1C20027A87A /* By Storm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43009A071D26A1C20027A87A /* By StormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43009A1F1D26A1C20027A87A /* Build configuration list for PBXNativeTarget "By StormTests" */;
+			buildPhases = (
+				43009A041D26A1C20027A87A /* Sources */,
+				43009A051D26A1C20027A87A /* Frameworks */,
+				43009A061D26A1C20027A87A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43009A0A1D26A1C20027A87A /* PBXTargetDependency */,
+			);
+			name = "By StormTests";
+			productName = "By StormTests";
+			productReference = 43009A081D26A1C20027A87A /* By StormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43009A121D26A1C20027A87A /* By StormUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43009A221D26A1C20027A87A /* Build configuration list for PBXNativeTarget "By StormUITests" */;
+			buildPhases = (
+				43009A0F1D26A1C20027A87A /* Sources */,
+				43009A101D26A1C20027A87A /* Frameworks */,
+				43009A111D26A1C20027A87A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43009A151D26A1C20027A87A /* PBXTargetDependency */,
+			);
+			name = "By StormUITests";
+			productName = "By StormUITests";
+			productReference = 43009A131D26A1C20027A87A /* By StormUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		430099E91D26A1C20027A87A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Walker Kennedy";
+				TargetAttributes = {
+					430099F01D26A1C20027A87A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					43009A071D26A1C20027A87A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 430099F01D26A1C20027A87A;
+					};
+					43009A121D26A1C20027A87A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 430099F01D26A1C20027A87A;
+					};
+				};
+			};
+			buildConfigurationList = 430099EC1D26A1C20027A87A /* Build configuration list for PBXProject "By Storm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 430099E81D26A1C20027A87A;
+			productRefGroup = 430099F21D26A1C20027A87A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				430099F01D26A1C20027A87A /* By Storm */,
+				43009A071D26A1C20027A87A /* By StormTests */,
+				43009A121D26A1C20027A87A /* By StormUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		430099EF1D26A1C20027A87A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43009A021D26A1C20027A87A /* LaunchScreen.storyboard in Resources */,
+				430099FF1D26A1C20027A87A /* Assets.xcassets in Resources */,
+				430099FA1D26A1C20027A87A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43009A061D26A1C20027A87A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43009A111D26A1C20027A87A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		430099ED1D26A1C20027A87A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430099F71D26A1C20027A87A /* ViewController.swift in Sources */,
+				430099F51D26A1C20027A87A /* AppDelegate.swift in Sources */,
+				43009A261D26A1DA0027A87A /* WeatherController.swift in Sources */,
+				430099FD1D26A1C20027A87A /* By_Storm.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43009A041D26A1C20027A87A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43009A0D1D26A1C20027A87A /* By_StormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43009A0F1D26A1C20027A87A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43009A181D26A1C20027A87A /* By_StormUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43009A0A1D26A1C20027A87A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 430099F01D26A1C20027A87A /* By Storm */;
+			targetProxy = 43009A091D26A1C20027A87A /* PBXContainerItemProxy */;
+		};
+		43009A151D26A1C20027A87A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 430099F01D26A1C20027A87A /* By Storm */;
+			targetProxy = 43009A141D26A1C20027A87A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		430099F81D26A1C20027A87A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				430099F91D26A1C20027A87A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43009A001D26A1C20027A87A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43009A011D26A1C20027A87A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43009A1A1D26A1C20027A87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43009A1B1D26A1C20027A87A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43009A1D1D26A1C20027A87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "By Storm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kennedy.By-Storm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		43009A1E1D26A1C20027A87A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "By Storm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kennedy.By-Storm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		43009A201D26A1C20027A87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "By StormTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kennedy.By-StormTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/By Storm.app/By Storm";
+			};
+			name = Debug;
+		};
+		43009A211D26A1C20027A87A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "By StormTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kennedy.By-StormTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/By Storm.app/By Storm";
+			};
+			name = Release;
+		};
+		43009A231D26A1C20027A87A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "By StormUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kennedy.By-StormUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "By Storm";
+			};
+			name = Debug;
+		};
+		43009A241D26A1C20027A87A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "By StormUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kennedy.By-StormUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "By Storm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		430099EC1D26A1C20027A87A /* Build configuration list for PBXProject "By Storm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43009A1A1D26A1C20027A87A /* Debug */,
+				43009A1B1D26A1C20027A87A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43009A1C1D26A1C20027A87A /* Build configuration list for PBXNativeTarget "By Storm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43009A1D1D26A1C20027A87A /* Debug */,
+				43009A1E1D26A1C20027A87A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43009A1F1D26A1C20027A87A /* Build configuration list for PBXNativeTarget "By StormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43009A201D26A1C20027A87A /* Debug */,
+				43009A211D26A1C20027A87A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43009A221D26A1C20027A87A /* Build configuration list for PBXNativeTarget "By StormUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43009A231D26A1C20027A87A /* Debug */,
+				43009A241D26A1C20027A87A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		430099FB1D26A1C20027A87A /* By_Storm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				430099FC1D26A1C20027A87A /* By_Storm.xcdatamodel */,
+			);
+			currentVersion = 430099FC1D26A1C20027A87A /* By_Storm.xcdatamodel */;
+			path = By_Storm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 430099E91D26A1C20027A87A /* Project object */;
+}
