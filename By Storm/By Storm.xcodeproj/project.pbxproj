@@ -15,8 +15,9 @@
 		43009A021D26A1C20027A87A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43009A001D26A1C20027A87A /* LaunchScreen.storyboard */; };
 		43009A0D1D26A1C20027A87A /* By_StormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43009A0C1D26A1C20027A87A /* By_StormTests.swift */; };
 		43009A181D26A1C20027A87A /* By_StormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43009A171D26A1C20027A87A /* By_StormUITests.swift */; };
-		43009A261D26A1DA0027A87A /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43009A251D26A1DA0027A87A /* WeatherController.swift */; };
 		43009A281D26A2570027A87A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43009A271D26A2570027A87A /* CoreLocation.framework */; };
+		435D336F1D26A7F9001813BC /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D336E1D26A7F9001813BC /* Weather.swift */; };
+		435D33711D26A98C001813BC /* WeatherGetterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D33701D26A98C001813BC /* WeatherGetterDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +52,9 @@
 		43009A131D26A1C20027A87A /* By StormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "By StormUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43009A171D26A1C20027A87A /* By_StormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = By_StormUITests.swift; sourceTree = "<group>"; };
 		43009A191D26A1C20027A87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43009A251D26A1DA0027A87A /* WeatherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
 		43009A271D26A2570027A87A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		435D336E1D26A7F9001813BC /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Weather.swift; path = Weather/Weather.swift; sourceTree = "<group>"; };
+		435D33701D26A98C001813BC /* WeatherGetterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherGetterDelegate.swift; path = Weather/WeatherGetterDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		430099F31D26A1C20027A87A /* By Storm */ = {
 			isa = PBXGroup;
 			children = (
+				435D336B1D26A6B8001813BC /* Weather */,
 				430099F41D26A1C20027A87A /* AppDelegate.swift */,
 				430099F61D26A1C20027A87A /* ViewController.swift */,
 				430099F81D26A1C20027A87A /* Main.storyboard */,
@@ -112,7 +115,6 @@
 				43009A001D26A1C20027A87A /* LaunchScreen.storyboard */,
 				43009A031D26A1C20027A87A /* Info.plist */,
 				430099FB1D26A1C20027A87A /* By_Storm.xcdatamodeld */,
-				43009A251D26A1DA0027A87A /* WeatherController.swift */,
 			);
 			path = "By Storm";
 			sourceTree = "<group>";
@@ -133,6 +135,15 @@
 				43009A191D26A1C20027A87A /* Info.plist */,
 			);
 			path = "By StormUITests";
+			sourceTree = "<group>";
+		};
+		435D336B1D26A6B8001813BC /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				435D33701D26A98C001813BC /* WeatherGetterDelegate.swift */,
+				435D336E1D26A7F9001813BC /* Weather.swift */,
+			);
+			name = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				430099F71D26A1C20027A87A /* ViewController.swift in Sources */,
+				435D33711D26A98C001813BC /* WeatherGetterDelegate.swift in Sources */,
 				430099F51D26A1C20027A87A /* AppDelegate.swift in Sources */,
-				43009A261D26A1DA0027A87A /* WeatherController.swift in Sources */,
+				435D336F1D26A7F9001813BC /* Weather.swift in Sources */,
 				430099FD1D26A1C20027A87A /* By_Storm.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +506,7 @@
 				43009A1E1D26A1C20027A87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43009A1F1D26A1C20027A87A /* Build configuration list for PBXNativeTarget "By StormTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +515,7 @@
 				43009A211D26A1C20027A87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43009A221D26A1C20027A87A /* Build configuration list for PBXNativeTarget "By StormUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +524,7 @@
 				43009A241D26A1C20027A87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

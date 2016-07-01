@@ -9,22 +9,18 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, WeatherGetterDelegate {
     let locationManager = CLLocationManager()
+    var weather: WeatherGetter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        //        let weather = WeatherGetter()
-        //        weather.getWeather("Tampa")
-        
+        weather = WeatherGetter(delegate: self)
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
-        //        mapView.showsUserLocation = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,10 +42,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             
             if placemarks?.count > 0 {
                 let pm = placemarks![0]
-                self.displayLocationInfo(pm)
                 if let currentArea = pm.postalCode as String! {
-                    let weatherGetter = WeatherGetter()
-                    weatherGetter.getWeather(currentArea)
+                    self.weather.getWeatherByPostalCode(currentArea)
                 }
             }
             else {
@@ -58,13 +52,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         })
     }
     
-    func displayLocationInfo(placemark: CLPlacemark) {
-        //stop updating location to save battery life
+    
+    // MARK: -
+    
+    // MARK: WeatherGetterDelegate methods
+    // -----------------------------------
+    
+    func didGetWeather(weather: Weather) {
+        print(weather)
         locationManager.stopUpdatingLocation()
-        print(placemark.locality!)
-        print(placemark.postalCode!)
-        print(placemark.administrativeArea!)
-        print(placemark.country!)
+    }
+    
+    func didNotGetWeather(error: NSError) {
+        print("didNotGetWeather error: \(error)")
+        locationManager.stopUpdatingLocation()
     }
 }
 
